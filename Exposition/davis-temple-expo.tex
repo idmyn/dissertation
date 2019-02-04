@@ -1,12 +1,21 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
 \usepackage[authordate,backend=biber]{biblatex-chicago}
-\addbibresource{../diss.bib}
+\addbibresource{/Users/david/GitHub/Active/dissertation/diss.bib}
 
-\usepackage{setspace}
-%\doublespacing
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[scaled]{beramono}
+\usepackage{setspace}
+\setstretch{1.29}
+\usepackage{parskip}
 
-\usepackage{amssymb}
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titlespacing*{\section}
+{0pt}{9pt}{0pt}
+
 
 \author{David Mynors}
 \title{What is TempleOS?}
@@ -16,13 +25,13 @@
 
 TempleOS is an operating system (OS) written by Terry Davis.
 Its development is said to have begun in 2003
-and it was first released with the name `SparrowOS' in 2012 before
-it was renamed to TempleOS the following year.
+and it was first released with the name `SparrowOS' in 2012
+before it was renamed to TempleOS the following year.
 Its reported purpose varies depending on where you look.
 In the introduction section of its documentation, it describes itself as
 an ``operating system for recreational programming'' most beneficial for
 ``professionals doing hobby projects'', ``teenagers doing projects'',
-and ``non- professional, older-persons projects''.
+and ``non-professional, older-persons projects''.
 In its Charter, however, it describes itself as ``God's official temple''
 and proclaims that
 ``just like Solomon’s temple, [it] is a community focal point
