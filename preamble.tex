@@ -1,0 +1,23 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[authordate,backend=biber]{biblatex-chicago}
+\addbibresource{diss.bib}
+\DeclareLabeldate{\field{date}\field{eventdate} \field{origdate}\literal{nodate}}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10,letterspace=50]{microtype}
+\microtypecontext{spacing=nonfrench}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[scaled]{beramono}
+\usepackage{setspace}
+\setstretch{1.29}
+\usepackage{parskip}
+
+\setlength{\skip\footins}{20pt}
+
+\usepackage{titlesec}
+%\titleformat*{\section}{\large\bfseries}
+\titleformat*{\section}{\Large\scshape\lsstyle}
+\titlespacing*{\section}
+{0pt}{7pt}{0pt}
