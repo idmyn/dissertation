@@ -11,15 +11,17 @@
 \usepackage[T1]{fontenc}
 \usepackage[bitstream-charter]{mathdesign}
 \usepackage[scaled]{beramono}
+
 \usepackage{setspace}
 \setstretch{1.29}
 \usepackage{parskip}
+%\setlength{\parindent}{2em}
 
 \setlength{\skip\footins}{20pt}
 
 \usepackage{titlesec}
-%\titleformat*{\section}{\large\bfseries}
-\titleformat*{\section}{\Large\scshape\lsstyle}
+\titleformat*{\section}{\large\bfseries}
+%\titleformat*{\section}{\Large\scshape\lsstyle}
 \titlespacing*{\section}
 {0pt}{7pt}{0pt}
 
@@ -33,4 +35,5 @@
 \maketitle
 \subfile{Chapter_One.tex}
 \subfile{Chapter_Two.tex}
+\printbibliography
 \end{document}
