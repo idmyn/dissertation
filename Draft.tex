@@ -31,10 +31,12 @@
 
 \titleformat{\chapter}[display]
 {\normalfont%
+    \centering
     \LARGE% %change this size to your needs for the first line
-    \bfseries}{\chaptertitlename\ \thechapter}{20pt}{%
+    \bfseries}{\thechapter}{20pt}{%
     \huge %change this size to your needs for the second line
     }
+\renewcommand{\thechapter}{\Roman{chapter}}
 
 %http://mirror.ox.ac.uk/sites/ctan.org/macros/latex/contrib/tocloft/tocloft.pdf
 \usepackage{tocloft}
