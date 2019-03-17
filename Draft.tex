@@ -36,19 +36,33 @@
     \huge %change this size to your needs for the second line
     }
 
+%http://mirror.ox.ac.uk/sites/ctan.org/macros/latex/contrib/tocloft/tocloft.pdf
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\LARGE\bfseries}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+
 \widowpenalty10000
 \clubpenalty10000
 
 \usepackage{subfiles}
 
-\title{Terry A. Davis and his Temple: When Seriously Invented Religion isn't Taken Seriously}
+\title{TempleOS: a Liminal Case in Religious Studies}
 \author{David Mynors}
 \date{}
 
 \begin{document}
 \maketitle
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+\pagenumbering{arabic}
+\subfile{Introduction.tex}
 \subfile{Chapter_One.tex}
 \subfile{Chapter_Two.tex}
 \subfile{Chapter_3.tex}
-\printbibliography
+\printbibliography[
+heading=bibintoc,
+title={Bibliography}
+]
 \end{document}
